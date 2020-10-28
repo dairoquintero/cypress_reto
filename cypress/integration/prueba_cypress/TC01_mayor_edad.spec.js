@@ -8,7 +8,6 @@ describe('Login', function(){
         cy.get('input[data-qadp="age_gate_year_4"]').type('3')
 
         //Meses
-        //cy.wait('input[data-qadp="age_gate_month_1"]')
         cy.get('input[data-qadp="age_gate_month_1"]',{ timeout: 10000 }).should('be.visible').type('1')
         cy.get('input[data-qadp="age_gate_month_2"]').type('2')
 
@@ -21,8 +20,6 @@ describe('Login', function(){
         cy.wait(50000)
 
 
-        //cy.get('input[type="email"]').type('qamilestone.academy@gmail.com')
-        //cy.get('input[type="password"]').type('admin123')
-        //cy.get('.btn').contains('Sign in').should('be.visible').click()
+
     })
 })
